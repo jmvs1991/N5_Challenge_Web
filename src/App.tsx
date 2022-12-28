@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { PermissionPage } from "./Pages/Permission/Permission.page";
 import { LayoutPage } from "./Shared/Layout/Layout.page";
-import { TypePage } from "./Pages/Type/Type.page";
+import { TypeProvider } from "./Pages/Type/Type.provider";
 import "./App.css";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <LayoutPage>
         <Routes>
           <Route path="/permission" element={<PermissionPage />} />
-          <Route path="/type" element={<TypePage />} />
+          <Route path="/type" element={<TypeProvider />} />
         </Routes>
       </LayoutPage>
     </BrowserRouter>
