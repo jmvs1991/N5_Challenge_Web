@@ -2,12 +2,10 @@ import { useEffect, useState } from "react";
 import { useType } from "./../../Core/Context/Type/Type.hook";
 import { TypeTableComponent } from "./Components/Table/Type-Table.component";
 import { LoadingComponent } from "./../../Shared/Components/Loading.component";
-import { TypeActionsComponent } from "./Components/Actions/Type-Actions.component";
+import { ActionsComponent } from "./../../Shared/Components/Actions.component";
 import { TypeDialog } from "./Dialogs/Type/Type.dialog";
 import { Grid } from "@mui/material";
 import { TypeEntity } from "../../Core/Microservices/Type/Models/Type.entity";
-import { boolean } from "yup/lib/locale";
-import { type } from "os";
 import { Result } from "../../Core/Utils/Enum";
 import { TypeDTO } from "../../Core/Microservices/Type/Models/Type.dto";
 
@@ -104,7 +102,7 @@ export const TypePage = () => {
           />
         </Grid>
         <Grid container item xs={12} direction="row" justifyContent="flex-end">
-          <TypeActionsComponent addType={handleAdd} />
+          <ActionsComponent onClick={handleAdd} />
         </Grid>
       </Grid>
     </>

@@ -2,8 +2,6 @@ import { TypeProvider as TypeProviderContext } from "./../../Core/Context/Type/T
 import { TypePage } from "./Type.page";
 
 export const TypeProvider = () => {
-  
-
   return (
     <TypeProviderContext>
       <TypePage />
