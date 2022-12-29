@@ -1,4 +1,3 @@
-import react from "react";
 import { useReducer } from "react";
 import { TypeEntity } from "../../Microservices/Type/Models/Type.entity";
 import { TypeContext } from "./Type.context";
